@@ -24,7 +24,7 @@ export const Header = () => {
         </div>
       </header>
       <div
-        className={`transition-all duration-300 fixed top-[65px] w-full min-h-[40px] z-20 bg-white px-8 py-6 flex flex-col gap-6 items-center ${open ? '-translate-y-[400px]' : '-translate-y-0'}`}
+        className={`transition-all duration-300 fixed top-[65px] w-full min-h-[40px] z-20 bg-white px-8 py-6 flex flex-col gap-6 items-center ${!open ? '-translate-y-[400px]' : '-translate-y-0'}`}
       >
         <Link href={'/'} className={'block'}>
           Home
