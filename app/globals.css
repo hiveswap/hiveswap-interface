@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.banner-title {
+    @apply font-semibold sm:text-[46px] text-[24px];
+}
+
+.banner-desc {
+    @apply text-[#66615E];
+}
+
+.btn-primary {
+    @apply h-[36px] leading-[36px] rounded-full bg-primary font-semibold px-6 text-white shadow-button-primary;
+}
+
+.card {
+    @apply bg-[#fafafa] p-8 rounded-xl;
+}
+
+.card-title {
+    @apply text-[24px] font-bold;
+}
+
+.card-desc {
+    @apply text-[#66615E] h-[150px];
+}
