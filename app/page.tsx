@@ -249,12 +249,8 @@ export default function Home() {
                   <div className={'banner-title text-center mb-2'}>Community</div>
                 </Fade>
                 <Fade direction={'up'}>
-                  <div className='flex items-center gap-4'>
-                    <Link href={''} className={'btn-primary flex items-center gap-2'}>
-                      <Telegram />
-                      Telegram
-                    </Link>
-                    <Link href={''} className={'btn-primary flex items-center gap-2'}>
+                  <div className='flex items-center justify-center'>
+                    <Link href={'https://x.com/hiveswap_io'} className={'btn-primary flex items-center gap-2'}>
                       <Twitter />
                       Twitter
                     </Link>
