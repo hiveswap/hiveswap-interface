@@ -270,10 +270,10 @@ export default function Home() {
       <div className={'bg-white py-12'}>
         <div className='container mx-auto'>
           <div className='sm:ml-12 flex items-center justify-center gap-12 font-medium'>
-            <Link href={'/'}>Community</Link>
-            <Link href={'/'}>Github</Link>
+            <Link href={'https://twitter.com/hiveswap_io'}>Community</Link>
+            <Link href={'https://github.com/hiveswap'}>Github</Link>
             <Link href={'https://docs.hiveswap.io'}>Docs</Link>
-            <Link href={'/'}>Launch App</Link>
+            <Link href={'https://www.hiveswap.io'}>Launch App</Link>
           </div>
         </div>
       </div>

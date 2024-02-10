@@ -12,7 +12,7 @@ export const Header = () => {
           <LogoSVG />
           <div className='ml-auto items-center gap-12 font-medium sm:flex hidden'>
             <Link href={'/'}>Home</Link>
-            <Link href={'/'}>Community</Link>
+            <Link href={'https://twitter.com/hiveswap_io'}>Community</Link>
             <Link href={'https://github.com/hiveswap'}>Github</Link>
             <Link href={'https://docs.hiveswap.io'}>Docs</Link>
             <Link href={'https://www.hiveswap.io/'} className={'btn-primary'}>
@@ -30,7 +30,7 @@ export const Header = () => {
         <Link href={'/'} className={'block'}>
           Home
         </Link>
-        <Link href={'/'} className={'block'}>
+        <Link href={'https://twitter.com/hiveswap_io'} className={'block'}>
           Community
         </Link>
         <Link href={'https://github.com/hiveswap'} className={'block'}>
