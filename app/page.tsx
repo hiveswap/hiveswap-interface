@@ -113,9 +113,9 @@ export default function Home() {
                 <div className={'card-title mt-4'}>Fully Realized interoperability</div>
                 <div className={'card-title mb-4'}>of liquidity for Bitcoin network assets</div>
                 <div className={'card-desc'}>
-                  Fully covered assets on Bitcoin's Layer 1, Bitcoin's interoperability layer, and Bitcoin's layer 2,
-                  with the MAP Protocol interoperability layer as the starting point, enabling any swap of assets across
-                  the three layers
+                  Fully covered assets on Bitcoin&apos;s Layer 1, Bitcoin&apos;s interoperability layer, and
+                  Bitcoin&apos;s layer 2, with the MAP Protocol interoperability layer as the starting point, enabling
+                  any swap of assets across the three layers
                 </div>
               </div>
             </div>
