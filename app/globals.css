@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 .banner-title {
-    @apply font-semibold sm:text-[46px] text-[24px];
+    @apply font-extrabold sm:text-[40px] text-[24px] sm:leading-[54px];
 }
 
 .banner-desc {
-    @apply text-[#66615E];
+    @apply text-[#66615E] text-[20px];
+}
+
+.section-desc {
+    @apply text-[#66615E] text-[16px];
 }
 
 .btn-primary {

@@ -55,19 +55,18 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <div className={'min-h-[650px] py-16 pt-24 relative bg-banner'}>
+      <div className={'min-h-[650px] py-20 pt-36 relative bg-banner'}>
         {/*<Image  src={'/banner.png'} width={1600} height={650} alt={''} />*/}
         <div className='container mx-auto h-full px-8'>
           <div className={'flex items-center h-full sm:flex-row flex-col'}>
             <div>
               <Fade direction={'up'}>
-                <div className={'banner-title'}>Swap Seamlessly in</div>
+                <div className={'banner-title mb-10 sm:w-[580px] w-[280px]'}>
+                  Hiveswap is the <span className={'text-primary'}>NO.1</span> SWAP in the Bitcoin ecosystem
+                </div>
               </Fade>
               <Fade direction={'up'}>
-                <div className={'banner-title -mt-2 mb-4'}>BTC and Beyond</div>
-              </Fade>
-              <Fade direction={'up'}>
-                <div className={'banner-desc sm:w-[500px]'}>
+                <div className={'banner-desc sm:w-[560px]'}>
                   Hiveswap is the NO.1 SWAP in the Bitcoin ecosystem, utilizing the interoperable Bitcoin layer MAP
                   Protocol to provide liquidity services for assets in the Bitcoin ecosystem, including assets on
                   Bitcoin L1, the MAP Protocol interoperability layer, and various Bitcoin L2s.
@@ -80,6 +79,7 @@ export default function Home() {
               width={460}
               height={420}
               className={'ml-auto sm:mt-0 mt-12'}
+              sizes={'(max-width: 768px) 100%'}
             />
           </div>
         </div>
@@ -102,7 +102,7 @@ export default function Home() {
               <div className={'text-primary text-[36px] font-semibold'}>
                 <CountUp end={tvl} decimals={3} prefix={'$'} />
               </div>
-              <div className={'text-[18px]'}>TVL</div>
+              <div className={'text-[18px]'}>Total Value Locked</div>
             </div>
           </div>
 
@@ -110,12 +110,12 @@ export default function Home() {
             <div className='sm:col-span-1 col-span-2'>
               <div className='card'>
                 <FeatureAcross />
-                <div className={'card-title mt-4'}>Unparalleled Interoperability</div>
-                <div className={'card-title mb-4'}>in the Bitcoin Ecosystem</div>
+                <div className={'card-title mt-4'}>Fully Realized interoperability</div>
+                <div className={'card-title mb-4'}>of liquidity for Bitcoin network assets</div>
                 <div className={'card-desc'}>
-                  Hiveswap covers assets across Bitcoin L1, Bitcoin interoperability layer, and L2s. Anchored in the
-                  Bitcoin interoperability layer — MAP Protocol, Hiveswap empowers users to freely swap assets across
-                  ALL three layers in the Bitcoin Ecosystem.
+                  Fully covered assets on Bitcoin's Layer 1, Bitcoin's interoperability layer, and Bitcoin's layer 2,
+                  with the MAP Protocol interoperability layer as the starting point, enabling any swap of assets across
+                  the three layers
                 </div>
               </div>
             </div>
@@ -125,33 +125,30 @@ export default function Home() {
                 <div className={'card-title mt-4'}>Liquidity Interoperability between</div>
                 <div className={'card-title mb-4'}>BTC and EVM Ecosystems</div>
                 <div className={'card-desc'}>
-                  Hiveswap redefines interoperability by enabling asset exchanges between the Bitcoin ecosystem and EVM
-                  ecosystems, including Ethereum, BNBChain, Polygon, Klaytn, Conflux, Near, and Tron. This peer-to-peer
-                  interoperability facilitates effortless transactions, blending the Bitcoin ecosystem with the world of
-                  EVM platforms.
+                  HiveSWAP supports the peer-to-peer interoperability of assets from mainstream EVM chains such as
+                  Ethereum, BNB Chain, Polygon, Klaytn, Conflux, NEAR, Tron, etc., enabling the swap between assets on
+                  the Bitcoin network and EVM ecosystem assets
                 </div>
               </div>
             </div>
             <div className='sm:col-span-1 col-span-2'>
               <div className='card'>
                 <FeatureSwap />
-                <div className={'card-title mt-4'}>Revolutionizing Asset Swap:</div>
-                <div className={'card-title mb-4'}>Inscriptions and Beyond</div>
+                <div className={'card-title mt-4'}>Supporting the swap of inscription assets</div>
+                <div className={'card-title mb-4'}>with various types of assets</div>
                 <div className={'card-desc'}>
-                  Hiveswap is also committed to ensuring ample liquidity for inscription assets, elevating them in the
-                  decentralized marketplace. This not only enhances the value of $BTC inscription assets but also
-                  empowers them with a wide array of use cases.
+                  Enabling inscription assets to have sufficient liquidity in the decentralized world.
                 </div>
               </div>
             </div>
             <div className='sm:col-span-1 col-span-2'>
               <div className='card'>
                 <FeatureExchange />
-                <div className={'card-title mt-4'}>Comprehensive $BTC Asset</div>
-                <div className={'card-title mb-4'}>Exchange Solutions</div>
+                <div className={'card-title mt-4'}>Supporting the swap between</div>
+                <div className={'card-title mb-4'}>$BTC and other types of assets</div>
                 <div className={'card-desc'}>
-                  Hiveswap offers specialized liquidity pools catering to $BTC related assets. This service is
-                  specifically designed to meet the decentralized exchange needs of $BTC asset holders.
+                  Supporting liquidity pools for $BTC-related assets and other assets, to meet the decentralized
+                  liquidity exchange needs of $BTC asset holders
                 </div>
               </div>
             </div>
@@ -162,44 +159,54 @@ export default function Home() {
       {/* banner-2 */}
       <div className='bg-banner min-h-[500px] py-16'>
         <div className='container mx-auto px-8 h-full flex sm:flex-row flex-col items-center justify-between'>
-          <div>
-            <Fade direction={'up'}>
-              <div className={'banner-title'}>Expanding Beyond the</div>
-              <div className={'banner-title -mt-2 mb-4'}>Bitcoin Interoperability Layer</div>
+          <div className={'sm:w-[728px]'}>
+            <Fade>
+              <div className='banner-title mb-4'>
+                Deployed not only on the interoperability layer-MAP Protocol of the Bitcoin network
+              </div>
             </Fade>
-            <Fade direction={'up'}>
-              <div className={'banner-desc sm:w-[700px]'}>
-                Hiveswap is set to expand its presence across emerging Bitcoin L2s, enhancing the overall liquidity
-                within the Bitcoin ecosystem.
+            <Fade>
+              <div className={'section-desc sm:w-[700px]'}>
+                HiveSwap will continue to deploy on emerging Bitcoin Layer 2 networks, providing liquidity services for
+                the overall Bitcoin network ecosystem
               </div>
             </Fade>
           </div>
-          <Image src={'/banner-2.png'} alt={'banner-1'} width={370} height={370} className={'sm:mt-0 mt-8'} />
+          <Image
+            src={'/banner-2.png'}
+            alt={'banner-1'}
+            width={370}
+            height={370}
+            sizes={'(max-width: 768px) 100%'}
+            className={'sm:mt-0 mt-8'}
+          />
         </div>
       </div>
 
       {/* banner-3 */}
       <div className='min-h-[500px] py-16'>
         <div className='container px-8 mx-auto h-full flex sm:flex-row flex-col-reverse items-center justify-between'>
-          <div className={'sm:px-0 px-8'}>
-            <Image src={'/banner-3.png'} alt={'banner-1'} width={370} height={358} className={'sm:mt-0 mt-12'} />
-          </div>
+          <Image
+            src={'/banner-3.png'}
+            alt={'banner-1'}
+            width={330}
+            height={308}
+            className={'sm:mt-0 mt-12'}
+            sizes={'(max-width: 768px) 70vw'}
+          />
           <div>
-            <Fade direction={'up'}>
-              <div className={'banner-title'}>Liquidity Mining:</div>
-              <div className={'banner-title -mt-2 mb-4'}>Participate and Earn</div>
-            </Fade>
-            <Fade direction={'up'}>
-              <div className={'banner-desc sm:w-[700px] mb-4'}>
-                Hiveswap introduces a dynamic liquidity mining model, rewarding users for adding liquidity to the
-                platform. This approach is tailored to address the ever-evolving market dynamics, offering diffrent
-                incentivesfor different trading pairs across different infrastructures.
+            <Fade>
+              <div className={'banner-title mb-4 sm:w-[680px] w-[300px]'}>
+                Liquidity mining, adding liquidity to earn token rewards
               </div>
             </Fade>
-            <Fade direction={'up'}>
-              <div className={'banner-desc sm:w-[700px]'}>
-                In addition, Hiveswap features a comprehensive use cases for its platform tokens, backed by a unique
-                platform fee buyback model, ensuring a progressive deflation of the total token supply.
+            <Fade>
+              <div className={'section-desc sm:w-[680px]'}>
+                To incentivize more users to add liquidity, HiveSwap adopts a liquidity mining model to generate tokens.
+                To meet the diverse needs of the market, different incentive schemes are set to various trading pairs on
+                different infrastructures. Meanwhile, HiveSwap offers a variety of utility scenarios for its platform
+                token and operates on a model of platform fee buyback, ensuring a continuous reduction in the total
+                supply of the platform token.
               </div>
             </Fade>
           </div>
@@ -210,19 +217,19 @@ export default function Home() {
       <div className='bg-banner min-h-[500px] py-16'>
         <div className='container mx-auto px-8 h-full flex sm:flex-row flex-col items-center justify-between'>
           <div>
-            <Fade direction={'up'}>
-              <div className={'banner-title'}>Built on Advanced</div>
-              <div className={'banner-title -mt-2 mb-4'}>and Reliable Technology</div>
+            <Fade>
+              <div className={'banner-title'}>Mature and</div>
+              <div className={'banner-title -mt-2 mb-4'}>robust technology</div>
             </Fade>
-            <Fade direction={'up'}>
-              <div className={'banner-desc sm:w-[700px] mb-4'}>
-                At its core, Hiveswap is built on a foundation of advanced and reliable SWAP technology. This guarantees
-                the utmost reliability in exchanges and ensures unmatched security for user funds, especially post-LP
-                pool addition.
+            <Fade>
+              <div className={'section-desc sm:w-[700px] mb-4'}>
+                HiveSwap adopts an industry-proven and robust SWAP technology framework, ensuring both the reliability
+                of exchanges and the security of user funds after adding liquidity pools, all under the protection of
+                mature technology.
               </div>
             </Fade>
-            <Fade direction={'up'}>
-              <Link href={''} className={'btn-primary'}>
+            <Fade>
+              <Link href={'https://github.com/hiveswap'} className={'btn-primary'}>
                 Github
               </Link>
             </Fade>
@@ -235,7 +242,7 @@ export default function Home() {
       <div className='py-20'>
         <div className='container mx-auto'>
           <div className='min-h-[357px] bg-[#fafafa] sm:pt-0 pt-12 rounded-xl flex sm:flex-row flex-col-reverse items-center justify-between'>
-            <Image src={'/banner-5.png'} alt={'banner-1'} width={520} height={388} />
+            <Image src={'/banner-5.png'} alt={'banner-1'} width={520} height={388} sizes={'(max-width: 768px) 100%'} />
             <div className={'sm:w-[500px] w-full flex justify-center sm:mb-0 mb-8'}>
               <div>
                 <Fade direction={'up'}>
@@ -261,11 +268,11 @@ export default function Home() {
 
       {/* menu */}
       <div className={'bg-white py-12'}>
-        <div className='container mx-auto flex sm:flex-row flex-col gap-4 items-center'>
-          <LogoSVG />
-          <div className='sm:ml-12 flex items-center gap-12 font-medium'>
+        <div className='container mx-auto'>
+          <div className='sm:ml-12 flex items-center justify-center gap-12 font-medium'>
             <Link href={'/'}>Community</Link>
             <Link href={'/'}>Github</Link>
+            <Link href={'https://docs.hiveswap.io'}>Docs</Link>
             <Link href={'/'}>Launch App</Link>
           </div>
         </div>

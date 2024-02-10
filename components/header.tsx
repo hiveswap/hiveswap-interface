@@ -14,6 +14,7 @@ export const Header = () => {
             <Link href={'/'}>Home</Link>
             <Link href={'/'}>Community</Link>
             <Link href={'https://github.com/hiveswap'}>Github</Link>
+            <Link href={'https://docs.hiveswap.io'}>Docs</Link>
             <Link href={'https://www.hiveswap.io/'} className={'btn-primary'}>
               Launch App
             </Link>
