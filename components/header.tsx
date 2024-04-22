@@ -21,7 +21,7 @@ export const Header = () => {
             <Link href={'https://docs.hiveswap.io'} target={'_blank'}>
               Docs
             </Link>
-            <Link href={'https://pro.hiveswap.io/'} target={'_blank'} className={'btn-primary'}>
+            <Link href={'https://pro.hiveswap.io/trade/swap'} target={'_blank'} className={'btn-primary'}>
               Launch App
             </Link>
           </div>
@@ -42,7 +42,7 @@ export const Header = () => {
         <Link href={'https://github.com/hiveswap'} className={'block'}>
           Github
         </Link>
-        <Link href={'https://pro.hiveswap.io/'} className={'btn-primary block'} target={'_blank'}>
+        <Link href={'https://pro.hiveswap.io/trade/swap'} className={'btn-primary block'} target={'_blank'}>
           Launch App
         </Link>
       </div>

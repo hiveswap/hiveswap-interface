@@ -44,12 +44,15 @@ export default function Home() {
   const [volume, setVolume] = useState(0)
 
   useEffect(() => {
-    const q = async () => {
-      const res: any = await request(graphUrl, query)
-      setTvl(Number(res?.factories?.[0]?.totalValueLockedUSD))
-      setVolume(Number(res?.factories?.[0]?.totalVolumeUSD))
+    const a = async () => {
+      const res: any = await fetch(
+        'https://api-dass.izumi.finance/api/v1/izi_swap/summary_record/?chain_id=22776&type=3',
+      ).then((r) => r.json())
+      setTvl(res?.data?.[0].tvl)
+      setVolume(res?.data?.[0].volDay)
+      console.log(res)
     }
-    q()
+    a()
   }, [])
 
   return (
@@ -95,7 +98,7 @@ export default function Home() {
               <div className={'text-primary text-[36px] mb-1 font-semibold'}>
                 <CountUp end={volume} decimals={3} prefix={'$'} />
               </div>
-              <div className={'text-[18px]'}>Total Trading Volume</div>
+              <div className={'text-[18px]'}>Trading Volume 24H</div>
             </div>
             <div className={'sm:mx-36 sm:my-0 my-10 sm:h-[111px] h-[1px] sm:w-[1px] w-[300px] bg-divider'}></div>
             <div className='text-center'>
