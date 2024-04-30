@@ -258,6 +258,12 @@ export default function Home() {
                       Twitter
                     </Link>
                   </div>
+                  <div className='flex items-center justify-center pt-2 pl-1'>
+                    <Link href={'https://t.me/hiveswap_io'} className={' btn-primary flex items-center gap-2 '}>
+                      <Telegram />
+                      Tlegram
+                    </Link>
+                  </div>
                 </Fade>
               </div>
             </div>
