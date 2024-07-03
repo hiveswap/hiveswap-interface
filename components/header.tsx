@@ -2,6 +2,7 @@ import { LogoSVG } from '@/components/svgs/logo'
 import Link from 'next/link'
 import { Menu } from '@/components/svgs/Menu'
 import { useState } from 'react'
+import { APP_LINK } from '@/config'
 
 export const Header = () => {
   const [open, setOpen] = useState(false)
@@ -21,7 +22,7 @@ export const Header = () => {
             <Link href={'https://docs.hiveswap.io'} target={'_blank'}>
               Docs
             </Link>
-            <Link href={'https://pro.hiveswap.io/trade/swap'} target={'_blank'} className={'btn-primary'}>
+            <Link href={APP_LINK} target={'_blank'} className={'btn-primary'}>
               Launch App
             </Link>
           </div>
@@ -42,7 +43,7 @@ export const Header = () => {
         <Link href={'https://github.com/hiveswap'} className={'block'}>
           Github
         </Link>
-        <Link href={'https://pro.hiveswap.io/trade/swap'} className={'btn-primary block'} target={'_blank'}>
+        <Link href={APP_LINK} className={'btn-primary block'} target={'_blank'}>
           Launch App
         </Link>
       </div>

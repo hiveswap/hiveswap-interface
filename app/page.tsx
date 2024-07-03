@@ -15,6 +15,7 @@ import { useEffect, useState } from 'react'
 import request, { gql } from 'graphql-request'
 import { Menu } from '@/components/svgs/Menu'
 import { Header } from '@/components/header'
+import { APP_LINK } from '@/config'
 
 const graphUrl = 'https://graph.mapprotocol.io/subgraphs/name/hiveswap/exchange-v3'
 
@@ -261,7 +262,7 @@ export default function Home() {
                   <div className='flex items-center justify-center pt-2 pl-1'>
                     <Link href={'https://t.me/hiveswap_io'} className={' btn-primary flex items-center gap-2 '}>
                       <Telegram />
-                      Tlegram
+                      Telegram
                     </Link>
                   </div>
                 </Fade>
@@ -284,7 +285,7 @@ export default function Home() {
             <Link href={'https://docs.hiveswap.io'} target={'_blank'}>
               Docs
             </Link>
-            <Link href={'https://app.hiveswap.io'} target={'_blank'}>
+            <Link href={APP_LINK} target={'_blank'}>
               Launch App
             </Link>
           </div>
