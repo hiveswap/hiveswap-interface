@@ -1,1 +1,1 @@
-export const APP_LINK = 'https://pro.hiveswap.io/trade/swap'
+export const APP_LINK = 'https://app.hiveswap.io'
