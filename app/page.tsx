@@ -291,6 +291,29 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className={'flex flex-col items-center pb-8'}>
+        <div className={'font-medium mb-2'}>Contract</div>
+        <div>
+          Map Protocol Chain:{' '}
+          <Link
+            className={'text-primary'}
+            href={'https://www.maposcan.io/token/0x69c43364667cf6279016bbec76445174c78f142d'}
+            target={'_blank'}
+          >
+            0x69c4...242d
+          </Link>
+        </div>
+        <div>
+          Ethereum:{' '}
+          <Link
+            className={'text-primary'}
+            href={'https://etherscan.io/token/0x1e2aa124385016f9bd3ed87d21d907fac21fe707'}
+            target={'_blank'}
+          >
+            0x1e2a...e707
+          </Link>
+        </div>
+      </div>
 
       <footer className={'bg-primary py-4 text-center text-white font-medium'}>
         © 2024 HiveSwap All rights reserved.
